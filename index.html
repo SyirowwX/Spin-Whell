@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Wheel SMP IT GWB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎡 Spin Wheel SMP IT GWB buatan Raja :v</h1>
+    <button id="toggleDarkMode">🌙 Dark Mode</button>
+</header>
+    <div class="container">
+        <!-- Input Nama -->
+        <div class="input-area">
+            <input type="text" id="nameInput" placeholder="Masukkan nama...">
+            <button id="addNameBtn">Tambah</button>
+            <ul id="nameList"></ul>
+        </div>
+        
+        <!-- Roda -->
+        <div class="wheel-container">
+            <div class="pointer"></div>
+            <canvas id="wheel" width="300" height="300"></canvas>
+            <button id="spinBtn">PUTAR</button>
+            <div class="options">
+                <label>
+                    <input type="checkbox" id="removeWinner"> Hapus pemenang dari daftar
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup Pemenang -->
+    <div id="winnerPopup" class="popup">
+        <div class="popup-content">
+            <h2>Pemenang 🎉</h2>
+            <p id="winnerName"></p>
+            <button id="closePopup">Tutup</button>
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <audio id="winSound" src="win.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
